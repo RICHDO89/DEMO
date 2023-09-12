@@ -28,7 +28,7 @@ let CLI=document.querySelector("#clic");let ftsz;
 if(larg>=800){CLI.style.fontSize="60px";ftsz=60;}
 if(larg<800){CLI.style.fontSize="40px";ftsz=40;} 
  let flag=1;
-CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";
+CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";CLI.style.right=""+Math.round((larg-CLI.offsetWidth)/2)+"px";
 CLI.style.top=""+Math.round((haut-CLI.offsetHeight)/3)+"px";
 let intv=setInterval(()=>{if(larg>=800){if(ftsz==60){flag=1;}if(ftsz==40){flag=0;}
 if(ftsz>=40&&ftsz<60&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";}

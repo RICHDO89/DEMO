@@ -25,8 +25,8 @@ if(larg>800){navi.style.left=""+Math.round((larg-800)/2)+"px";}
 if(larg<800){navi.style.left=""+50+"px";navi.style.right=""+30+"px";}
  
 let CLI=document.querySelector("#clic");let ftsz;
-if(larg>=700){CLI.style.fontSize="60px";ftsz=60;}
-if(larg<700){CLI.style.fontSize="40px";ftsz=40;} 
+if(larg>=800){CLI.style.fontSize="60px";ftsz=60;}
+if(larg<800){CLI.style.fontSize="40px";ftsz=40;} 
  let flag=1;
 CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";
 CLI.style.top=""+Math.round((haut-CLI.offsetHeight)/3)+"px";

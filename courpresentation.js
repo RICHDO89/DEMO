@@ -22,6 +22,8 @@ let navi=document.querySelector("#nv1");
 let suj=document.querySelector("#tab");
 
 if(larg>800){navi.style.left=""+Math.round((larg-800)/2)+"px";}
+if(larg<800){navi.style.left=""+10+"px";}
+ 
 let CLI=document.querySelector("#clic");
 CLI.style.fontSize="60px";let ftsz=60;let flag=1;
 CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";

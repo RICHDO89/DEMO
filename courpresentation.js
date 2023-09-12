@@ -38,7 +38,7 @@ CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";}
 if(larg<800){if(ftsz==40){flag=1;}if(ftsz==20){flag=0;}
 if(ftsz>=20&&ftsz<40&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";}
 if (ftsz<=40&&ftsz>20&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";}
-CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)"px";}
+CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";}
                           
                          },100);
 let nxtph=document.querySelector("#nxtphs");

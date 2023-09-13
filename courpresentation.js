@@ -43,15 +43,14 @@ if(larg<800){let clsvp;
  clc.setAttribute("id","clk");
  clc.textContent="cliquez svp";
  clc.setAttribute("font-size","90px");
- clc.setAttribute("x","0");
- clc.setAttribute("y","0");
+ clc.setAttribute("x","100");
+ clc.setAttribute("y","100");
  svcvr.append(clc);
  clsvp=document.querySelector("#clk");
  if(ftsz==90){flag=1;}if(ftsz==60){flag=0;}
 if(ftsz>=60&&ftsz<90&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";document.querySelector("#clk").setAttribute("font-size",""+ftsz+"px"); }
 if (ftsz<=90&&ftsz>60&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";document.querySelector("#clk").setAttribute("font-size",""+ftsz+"px");}
-document.querySelector("#clk").setAttribute("x",""+Math.round((larg-clsvp.offsetWidth)/2)+"px");
-document.querySelector("#clk").setAttribute("y",""+Math.round((haut-clsvp.offsetHeight)/2)+"px"); 
+
  CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";}
                           
                          },100);

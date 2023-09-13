@@ -26,7 +26,7 @@ if(larg<800){navi.style.left=""+50+"px";navi.style.right=""+30+"px";}
  
 let CLI=document.querySelector("#clic");let ftsz;
 if(larg>=800){CLI.style.fontSize="60px";ftsz=60;}
-if(larg<800){CLI.style.fontSize="40px";ftsz=40;} 
+if(larg<800){CLI.style.fontSize="90px";ftsz=90;} 
  let flag=1;
 CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";
 CLI.style.top=""+Math.round((haut-CLI.offsetHeight)/3)+"px";
@@ -35,9 +35,9 @@ if(ftsz>=40&&ftsz<60&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";}
 if (ftsz<=60&&ftsz>40&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";}
 CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";}
 
-if(larg<800){if(ftsz==40){flag=1;}if(ftsz==20){flag=0;}
-if(ftsz>=20&&ftsz<40&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";}
-if (ftsz<=40&&ftsz>20&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";}
+if(larg<800){if(ftsz==90){flag=1;}if(ftsz==60){flag=0;}
+if(ftsz>=60&&ftsz<90&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";}
+if (ftsz<=90&&ftsz>60&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";}
 CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";}
                           
                          },100);

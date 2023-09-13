@@ -20,10 +20,11 @@ let larg=screen.availWidth;
 let haut=screen.availHeight;
 let navi=document.querySelector("#nv1");
 let suj=document.querySelector("#tab");
-
+let svcvr=document.querySelector("#svcouvr");
 if(larg>800){navi.style.left=""+Math.round((larg-800)/2)+"px";}
-if(larg<800){navi.style.left=""+30+"px";navi.style.right=""+30+"px";}
- 
+if(larg<800){document.querySelector("#couvr").removeChild(svcvr);
+ navi.style.left=""+30+"px";navi.style.right=""+30+"px";}
+svcvr.style.height=""+haut+"px"; 
 let CLI=document.querySelector("#clic");let ftsz;
 if(larg>=800){CLI.style.fontSize="60px";ftsz=60;}
 if(larg<800){CLI.style.fontSize="90px";ftsz=90;} 
@@ -35,10 +36,23 @@ if(ftsz>=40&&ftsz<60&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";}
 if (ftsz<=60&&ftsz>40&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";}
 CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";}
 
-if(larg<800){if(ftsz==90){flag=1;}if(ftsz==60){flag=0;}
-if(ftsz>=60&&ftsz<90&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";}
-if (ftsz<=90&&ftsz>60&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";}
-CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";}
+if(larg<800){let clsvp;
+ CLI.style.color="rgba(100%,100%,100%,0)";
+  let clc=document.createElementNS(ns,"text");
+ clc.setAttribute("stroke","rgba(100%,100%,100%,1)");
+ clc.setAttribute("id","clk");
+ clc.textContent="cliquez svp";
+ clc.setAttribute("font-size","90px");
+ clc.setAttribute("x","0");
+ clc.setAttribute("y","0");
+ svcvr.append(clc);
+ clsvp=document.querySelector("#clk");
+ if(ftsz==90){flag=1;}if(ftsz==60){flag=0;}
+if(ftsz>=60&&ftsz<90&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";document.querySelector("#clk").setAttribute("font-size",""+ftsz+"px"); }
+if (ftsz<=90&&ftsz>60&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";document.querySelector("#clk").setAttribute("font-size",""+ftsz+"px");}
+document.querySelector("#clk").setAttribute("x",""+Math.round((larg-clsvp.offsetWidth)/2)+"px");
+document.querySelector("#clk").setAttribute("y",""+Math.round((haut-clsvp.offsetHeight)/2)+"px"); 
+ CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";}
                           
                          },100);
 let nxtph=document.querySelector("#nxtphs");

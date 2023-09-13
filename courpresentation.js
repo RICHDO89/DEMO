@@ -22,7 +22,7 @@ let navi=document.querySelector("#nv1");
 let suj=document.querySelector("#tab");
 
 if(larg>800){navi.style.left=""+Math.round((larg-800)/2)+"px";}
-if(larg<800){navi.style.left=""+70+"px";navi.style.right=""+30+"px";}
+if(larg<800){navi.style.left=""+30+"px";navi.style.right=""+30+"px";}
  
 let CLI=document.querySelector("#clic");let ftsz;
 if(larg>=800){CLI.style.fontSize="60px";ftsz=60;}

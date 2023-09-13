@@ -32,7 +32,7 @@ if(larg<800){CLI.style.fontSize="90px";ftsz=90;}
 CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";
 CLI.style.top=""+Math.round((haut-CLI.offsetHeight)/3)+"px";
 let intv=setInterval(()=>{if(larg>=800){
- CLI.style.color="rgba(100%,100%,100%,0)";
+ CLI.style.color="rgba(100%,10%,100%,0)";
   let clc=document.createElementNS(ns,"text");
  clc.setAttribute("stroke","rgba(100%,100%,100%,1)");
  clc.setAttribute("id","clk");

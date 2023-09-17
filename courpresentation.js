@@ -14,6 +14,8 @@ slct.setAttribute('id','svpro'+k+''+n);
 bod.removeChild(el);bod.append(slct);  }} }
 
 window.onload=function(){
+let sndtab=[0];
+ sndtab[0]=document.querySelector("#desc1");
 window.scrollBy(0,100);
 let ob=0;
 let larg=screen.availWidth;

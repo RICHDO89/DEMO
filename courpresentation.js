@@ -122,7 +122,8 @@ document.querySelector("#couvr").addEventListener("click",()=>{let rtn=0;let dfl
 /*let scrl=setInterval(()=>{if(rtn==0){window.scrollBy(0,20);dfl=dfl+20;if(dfl==12000){rtn=1;}}
 if(rtn==1){window.scrollBy(0,-20);dfl=dfl-20;if(dfl==0){rtn=0;}} },100);*/});
 
-
+document.querySelector("#svcouvr").addEventListener("click",()=>{let rtn=0;let dfl=0;clearInterval(intv);sndtab[0].play();sndnum[0]=1;
+});
 
 
 

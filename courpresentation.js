@@ -118,7 +118,7 @@ document.querySelector("#clk").setAttribute("y",""+Math.round((haut-CLI.offsetHe
                          },100);
 let nxtph=document.querySelector("#nxtphs");
 nxtph.style.left=""+0+"px";
-document.querySelector("#couvr").addEventListener("click",()=>{let rtn=0;let dfl=0;clearInterval(intv);sndtab[0].play();
+document.querySelector("#couvr").addEventListener("click",()=>{let rtn=0;let dfl=0;clearInterval(intv);sndtab[0].play();sndnum[0]=1;
 /*let scrl=setInterval(()=>{if(rtn==0){window.scrollBy(0,20);dfl=dfl+20;if(dfl==12000){rtn=1;}}
 if(rtn==1){window.scrollBy(0,-20);dfl=dfl-20;if(dfl==0){rtn=0;}} },100);*/});
 

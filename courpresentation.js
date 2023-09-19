@@ -267,8 +267,8 @@ ns="http://www.w3.org/2000/svg"; crtob=document.createElementNS(ns,"text"); crto
 
 
 document.querySelector("#e2").addEventListener('click',()=>{nxt=1;for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
-   sndtab[1].setAttribute('src','voix41.3gpp');selection=4;cls();
- sndtab[1].play();
+   sndtab[1].setAttribute('src','voix41.3gpp');selection=4;cls();sndtab[1].addEventListener("ended",()=>{sndnum[1]=0;});
+ sndtab[1].play();sndnum[1]=1;
 
 
 

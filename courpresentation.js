@@ -55,7 +55,7 @@ ns="http://www.w3.org/2000/svg"; crtob=document.createElementNS(ns,"text"); crto
 
  
 let sndtab=[0];let rang=0;
- sndtab[0]=document.querySelector("#dsc1");sndtab[0].setAttribute("src","dsc1.3gpp");
+ sndtab[0]=document.querySelector("#dsc1");sndtab[0].setAttribute("src","dsc1.mp3");
  for(let g=1;g<=4;g++){sndtab[g]=document.querySelector("#voix"+g);/*sndtab[g].setAttribute("src","voix"+g+".3gpp");*/ }
  for(let q=1;q<=14;q++){sndtab[4+q]=document.querySelector("#voiexo"+q);/*sndtab[4+q].setAttribute("src","voiexo"+q+".3gpp");*/ }
 for(let g=0;g<14;g++){for(let q=1;q<=3;q++){sndtab[18+3*g+q]=document.querySelector("#voicor"+(g+1)+""+q);

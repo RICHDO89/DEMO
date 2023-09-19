@@ -125,7 +125,22 @@ if(rtn==1){window.scrollBy(0,-20);dfl=dfl-20;if(dfl==0){rtn=0;}} },100);*/});
 document.querySelector("#svcouvr").addEventListener("click",()=>{let rtn=0;let dfl=0;clearInterval(intv);sndtab[0].play();sndnum[0]=1;
 });
 
+ 
+document.querySelector("#titrex1").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
+   sndtab[5].addEventListener("ended",()=>{sndnum[5]=0;});
+ sndtab[5].play();sndnum[5]=1;});
 
+document.querySelector("#prop11").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
+   sndtab[18].addEventListener("ended",()=>{sndnum[18]=0;});
+ sndtab[18].play();sndnum[18]=1;});
+
+document.querySelector("#prop12").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
+   sndtab[19].addEventListener("ended",()=>{sndnum[19]=0;});
+ sndtab[19].play();sndnum[19]=1;});
+
+document.querySelector("#prop13").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
+   sndtab[20].addEventListener("ended",()=>{sndnum[20]=0;});
+ sndtab[20].play();sndnum[20]=1;}); 
 
 document.querySelector("#e5").addEventListener('click',()=>{nxt=1;let fsd=5; /*document.querySelector('#dsc1').setAttribute('src','des2.3gpp');
   document.querySelector('#dsc1').play();*/
@@ -266,8 +281,12 @@ ns="http://www.w3.org/2000/svg"; crtob=document.createElementNS(ns,"text"); crto
 });
 
 
-document.querySelector("#e2").addEventListener('click',()=>{nxt=1;for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
-   sndtab[1].setAttribute('src','voix41.3gpp');selection=4;cls();sndtab[1].addEventListener("ended",()=>{sndnum[1]=0;});
+document.querySelector("#e2").addEventListener('click',()=>{nxt=1; sndtab[1].setAttribute('src','voix41.3gpp'); sndtab[5].setAttribute('src','voiexo14.3gpp'); 
+sndtab[18].setAttribute('src','voicorr114.3gpp');sndtab[19].setAttribute('src','voicorr124.3gpp');sndtab[20].setAttribute('src','voicorr134.3gpp');
+
+                                                            
+ for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
+   selection=4;cls();sndtab[1].addEventListener("ended",()=>{sndnum[1]=0;});
  sndtab[1].play();sndnum[1]=1;
 
 

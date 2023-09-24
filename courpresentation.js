@@ -149,7 +149,21 @@ document.querySelector("#prop12").addEventListener("click",()=>{for(let ply=0;pl
 
 document.querySelector("#prop13").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
    sndtab[20].addEventListener("ended",()=>{sndnum[21]=0;});
- sndtab[1].play();sndnum[21]=1;});                                                        
+ sndtab[21].play();sndnum[21]=1;});   
+
+ document.querySelector("#suite1").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
+   sndtab[2].addEventListener("ended",()=>{sndnum[2]=0;});
+ sndtab[2].play();sndnum[2]=1;});                                                            
+
+/*document.querySelector("#suite2").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
+   sndtab[3].addEventListener("ended",()=>{sndnum[3]=0;});
+ sndtab[3].play();sndnum[3]=1;}); 
+
+  document.querySelector("#suite1").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
+   sndtab[2].addEventListener("ended",()=>{sndnum[2]=0;});
+ sndtab[2].play();sndnum[2]=1;}); */
+
+
                                                             
                                                             
                                                             sndtab[1].addEventListener("ended",()=>{sndnum[1]=0;});

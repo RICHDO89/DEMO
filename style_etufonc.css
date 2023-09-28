@@ -724,6 +724,13 @@ top:0px;}
 #svpro143{background-color: rgba(0%,60%,100%,1);display: block;
 position: absolute;left: 0px;height:100px;width:250px;
 top: 0px;}
+#cover{background-color: rgba(0%,0%,0%,1);position: absolute;height: 14000px;width:100%;left:0px; 
+top: 0px;color:white;font-size:20px;font-family:Arial;display:flex;
+ border: 1px solid rgba(100%,0%,50%,1);z-index:4;flex-direction:column;justify-content:center;
+align-items:center; }
+
+#input1{width:450px;  }
+#sbmt{background-color:rgba(0%,30%,100%,1);color:white;}
 
 
 #couvr{background-color: rgba(0%,0%,0%,1);position: absolute;height: 14000px;width:100%; 
@@ -735,8 +742,7 @@ top: 0px;right: 0px;
  border: 1px solid rgba(0%,100%,50%,1); }
 
 
-#input1{width:450px;position:  }
-#sbmt{background-color:rgba(0%,30%,100%,1);color:white;}
+
 #clic{position:absolute; display:block; }
 
 

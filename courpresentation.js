@@ -98,9 +98,9 @@ if (ftsz<=60&&ftsz>40&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";document.
 document.querySelector("#clk").setAttribute("x",""+Math.round((larg-CLI.offsetWidth)/2)+"px");
 document.querySelector("#clk").setAttribute("y",""+Math.round((haut-CLI.offsetHeight)/2)+"px"); 
  
- (ftsz==60){flag=1;}if(ftsz==40){flag=0;}
+ /*(ftsz==60){flag=1;}if(ftsz==40){flag=0;}
 if(ftsz>=40&&ftsz<60&&flag==0){ftsz++;CLI.style.fontSize=""+ftsz+"px";}
-if (ftsz<=60&&ftsz>40&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";}
+if (ftsz<=60&&ftsz>40&&flag==1){ftsz--;CLI.style.fontSize=""+ftsz+"px";}*/
 CLI.style.left=""+Math.round((larg-CLI.offsetWidth)/2)+"px";}
 
 if(larg<800){let clsvp;

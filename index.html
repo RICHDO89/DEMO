@@ -364,7 +364,7 @@ document.querySelector('body').removeChild(document.querySelector('#couvr'));"><
 
 </div>
 
-  <div id="cover">
+  <div id="cover" onclick="document.querySelector('body').removeChild(document.querySelector('#cover'));">
 <h1 id="award">entrez le code de 30 chiffres</h1>
 <input type="text" id="input1" value="********entrez le code ici********" onclick="event.currentTarget.value='';">
 <input type="submit"id="sbmt" value="valider">

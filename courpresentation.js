@@ -134,21 +134,21 @@ sndtab[19].setAttribute('src','voicorr111.3gpp');sndtab[20].setAttribute('src','
 
                                                             
  for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
-   selection=1;cls();
+  selection=1;cls();sndtab[1].addEventListener("ended",()=>{sndnum[1]=0;});
      document.querySelector("#titrex1").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
    sndtab[5].addEventListener("ended",()=>{sndnum[5]=0;});
  sndtab[5].play();sndnum[5]=1;});
 
 document.querySelector("#prop11").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
    sndtab[19].addEventListener("ended",()=>{sndnum[19]=0;});
- sndtab[19].play();sndnum[18]=1;});
+ sndtab[19].play();sndnum[19]=1;});
 
 document.querySelector("#prop12").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
-   sndtab[19].addEventListener("ended",()=>{sndnum[20]=0;});
+   sndtab[20].addEventListener("ended",()=>{sndnum[20]=0;});
  sndtab[20].play();sndnum[20]=1;});
 
 document.querySelector("#prop13").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
-   sndtab[20].addEventListener("ended",()=>{sndnum[21]=0;});
+   sndtab[21].addEventListener("ended",()=>{sndnum[21]=0;});
  sndtab[21].play();sndnum[21]=1;});   
 
  document.querySelector("#suite1").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}

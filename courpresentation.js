@@ -128,12 +128,13 @@ document.querySelector("#svcouvr").addEventListener("click",()=>{let rtn=0;let d
  
 
 
-document.querySelector("#e5").addEventListener('click',()=>{nxt=1;let fsd=5; 
+document.querySelector("#e5").addEventListener('click',()=>{nxt=1;let fsd=5;
+  for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}                                                         
+  for(let effc=0;effc<=60;effc++){sndtab[effc].setAttribute('src','');}                                                           
 sndtab[1].setAttribute('src','voix11.3gpp');sndtab[2].setAttribute('src','voix21.3gpp'); sndtab[5].setAttribute('src','voiexo11.3gpp'); 
 sndtab[19].setAttribute('src','voicorr111.3gpp');sndtab[20].setAttribute('src','voicorr121.3gpp');sndtab[21].setAttribute('src','voicorr131.3gpp');
 
-                                                            
- for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
+                                    
   selection=1;cls();sndtab[1].addEventListener("ended",()=>{sndnum[1]=0;});
      document.querySelector("#titrex1").addEventListener("click",()=>{for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}
    sndtab[5].addEventListener("ended",()=>{sndnum[5]=0;});
@@ -148,8 +149,7 @@ document.querySelector("#prop12").addEventListener("click",()=>{for(let ply=0;pl
  sndtab[20].play();sndnum[20]=1;});
 
 document.querySelector("#prop13").addEventListener("click",()=>{
- for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}                                                         
-  for(let effc=0;effc<=60;effc++){sndtab[effc].setAttribute('src','');}                                                               
+                                                               
    sndtab[21].addEventListener("ended",()=>{sndnum[21]=0;});
  sndtab[21].play();sndnum[21]=1;});   
 
@@ -214,7 +214,7 @@ ns="http://www.w3.org/2000/svg"; crtob=document.createElementNS(ns,"text"); crto
 
 
 document.querySelector("#e4").addEventListener('click',()=>{nxt=1;/* document.querySelector('#dsc2').setAttribute('src','des2.3gpp');
-  document.querySelector('#dsc2').play();*/ for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}                                                          
+  document.querySelector('#dsc2').play();*/ for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();sndnum[ply]=0;}}                                                          
   for(let effc=0;effc<=60;effc++){sndtab[effc].setAttribute('src','');} 
  cls(); selection=2;
 
@@ -266,7 +266,7 @@ ns="http://www.w3.org/2000/svg"; crtob=document.createElementNS(ns,"text"); crto
 
 document.querySelector("#e3").addEventListener('click',()=>{nxt=1;/* document.querySelector('#dsc3').setAttribute('src','des3.3gpp');
   */                                                           
-    for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}                                                          
+    for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();sndnum[ply]=0;}}                                                          
   for(let effc=0;effc<=60;effc++){sndtab[effc].setAttribute('src','');}  selection=3; cls();
 
 
@@ -310,7 +310,7 @@ ns="http://www.w3.org/2000/svg"; crtob=document.createElementNS(ns,"text"); crto
 
 
 document.querySelector("#e2").addEventListener('click',()=>{nxt=1;
-   for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();}}                                                          
+   for(let ply=0;ply<=60;ply++){if(sndnum[ply]==1){sndtab[ply].pause();sndnum[ply]=0;}}                                                          
   for(let effc=0;effc<=60;effc++){sndtab[effc].setAttribute('src','');} 
                                                             
 sndtab[1].setAttribute('src','voix41.3gpp'); sndtab[5].setAttribute('src','voiexo14.3gpp'); 

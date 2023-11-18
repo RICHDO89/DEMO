@@ -2,7 +2,7 @@
 
 
 
-body{background-color: rgba(30%,30%,30%,0.6);}
+body{background-color: rgba(30%,30%,30%,0.6); display: flex; justify-content: center;}
 #nv1{background-color: rgba(0%,50%,80%,1); position: absolute;height: 13600px;width:800px;}
 
 

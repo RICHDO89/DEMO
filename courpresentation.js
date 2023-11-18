@@ -68,10 +68,10 @@ let haut=screen.availHeight;
 let navi=document.querySelector("#nv1");
 let suj=document.querySelector("#tab");
 let svcvr=document.querySelector("#svcouvr");
-if(larg>800){navi.style.left=""+Math.round((larg-800)/2)+"px";}
+/*if(larg>800){navi.style.left=""+Math.round((larg-800)/2)+"px";}
 if(larg<800){/*document.querySelector("#couvr").removeChild(svcvr);*/
  navi.style.left=""+30+"px";navi.style.right=""+30+"px";}
-svcvr.style.height=""+haut+"px"; 
+svcvr.style.height=""+haut+"px";*/ 
 let CLI=document.querySelector("#clic");let ftsz;
 if(larg>=800){CLI.style.fontSize="60px";ftsz=60;}
 if(larg<800){CLI.style.fontSize="90px";ftsz=90;} 
